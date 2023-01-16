@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-hooks-todo-list/static/css/main.f809ed2e.css",
+    "main.js": "/react-hooks-todo-list/static/js/main.ced9f5f5.js",
+    "static/media/cegla.jpg": "/react-hooks-todo-list/static/media/cegla.186fc69af40fc309f707.jpg",
+    "index.html": "/react-hooks-todo-list/index.html",
+    "main.f809ed2e.css.map": "/react-hooks-todo-list/static/css/main.f809ed2e.css.map",
+    "main.ced9f5f5.js.map": "/react-hooks-todo-list/static/js/main.ced9f5f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f809ed2e.css",
+    "static/js/main.ced9f5f5.js"
+  ]
+}
