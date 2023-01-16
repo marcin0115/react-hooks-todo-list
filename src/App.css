@@ -1,38 +1,123 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 35px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App .AppTitle {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(226, 139, 9);
+    border-radius: 10px;
+    border: 2px solid black;
+    align-self: center;
+    color: #1b1b1b;
+    font-family: "Covered By Your Grace", cursive;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .list {
+    align-self: center;
+    text-align: center;
+    color: white;
+    max-width: 98%;
   }
-}
+  
+  .list .crossText {
+    text-decoration: line-through;
+    color: red;
+  }
+  
+  .list input {
+    text-align: left;
+    background: transparent;
+    border: none;
+    color: black;
+    border-bottom: 4px dashed black;
+    min-width: 400px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+  
+  .list input::placeholder {
+    color: rgb(245, 239, 239);
+    font-size: 1.4rem;
+  }
+  
+  .list input:focus {
+    outline: none;
+    border: 3px dashed black;
+  }
+  
+  .list .addTask {
+    padding: 10px;
+    border-radius: 30%;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgb(226, 139, 9);
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 3px solid black;
+  }
+  
+  .list .addTask:hover {
+    background-color: rgb(250, 159, 23);
+    font-size: 1.3rem;
+  }
+  
+  .list ul {
+    overflow-wrap: break-word;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
+  
+  .list ul li {
+    overflow: hidden;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: -40px;
+    background-color: rgb(236, 236, 236, 0.6);
+    font-family: "Permanent Marker", cursive;
+    color: black;
+  }
+  .list ul li .delete {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+  
+  .list ul li .done {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  @media (max-width: 425px) {
+    .list {
+      overflow: hidden;
+    }
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
